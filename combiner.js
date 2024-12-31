@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const directoryPath = 'input';
-const maxFileSize = 50 * 1024 * 1024;
+const maxFileSize = 50 * 1024 * 1024 * 10;
 
 function readFilesRecursively(dir, filelist = []) {
   const files = fs.readdirSync(dir);
